@@ -206,7 +206,7 @@ fi
 #Build ssl cert command
 ssl=""
 if [ $MONGO_SSL_CA_FILE ]; then
-    ssl="$ssl --ssl $MONGO_SSL_CA_FILE"
+    ssl="$ssl --ssl --sslCAFile $MONGO_SSL_CA_FILE"
 fi
 
 # Script running flow
